@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <style>
+    #fact,#factYear{
+        display: none;
+    }
+    
+    
+    </style>
+    <title>Number Fact</title>
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card bg-primary text-white mt-5 p-4">
+                    <h2>Number Fact</h2>
+                    <label for="number">Enter a Number and get random fact about it:</label>
+                    <input type="number" id="numberInput" placeholder="Number.." class="form-control form-control-lg">
+                    <div id="fact" class="card-body">
+                        <h4 class="card-title">Number Fact</h4>
+                        <div id="factText" class="card-text"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mx-auto">
+                <div class="card bg-success text-white mt-5 p-4">
+                    <h2>Year Fact</h2>
+                    <label for="year">Enter a Year and get random fact about it:</label>
+                    <input type="number" id="yearInput" placeholder="Enter a year.." min="1" max="2055"  class="form-control form-control-lg">
+                    <div id="factYear" class="card-body">
+                        <h4 class="card-title">Year Fact</h4>
+                        <div id="factYtext" class="card-text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
